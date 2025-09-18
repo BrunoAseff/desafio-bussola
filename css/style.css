@@ -329,7 +329,7 @@ ul {
   color: var(--text-content);
   font-weight: 700;
   font-size: 0.825rem;
-  margin: 0;
+  margin-bottom: 0.59rem;
 }
 
 .notification-description {
