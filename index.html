@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bússola Social</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.svg" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <nav class="sidebar">
+        <header class="sidebar-header">
+          <img
+            src="assets/images/olivia-rhye.png"
+            alt="Foto de perfil de Olivia Rhye"
+            class="profile-pic"
+          />
+          <p class="profile-name">Olivia Rhye</p>
+          <p class="profile-email">oliviathye@gmail.com</p>
+        </header>
+
+        <ul class="nav-links">
+          <li>
+            <a href="#" class="active">
+              <img
+                src="assets/icons/house.png"
+                alt="Ícone de início"
+                class="nav-icon"
+              />Início</a
+            >
+          </li>
+          <li class="menu-item expandable">
+            <a href="#" 
+               class="menu-trigger"
+               aria-expanded="false"
+               aria-controls="submenu-perfil">
+              <img
+                src="assets/icons/user.png"
+                alt="Ícone de perfil"
+                class="nav-icon" />
+              Meu perfil
+              <img
+                src="assets/icons/chevron-down.png"
+                alt="Expandir menu"
+                class="chevron"
+            /></a>
+            <ul class="submenu" id="submenu-perfil">
+              <li><a href="#">Informações pessoais</a></li>
+              <li><a href="#">Senha e segurança</a></li>
+              <li><a href="#">Preferências</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="assets/icons/apartment.png"
+                alt="Ícone de organizações"
+                class="nav-icon"
+              />Minhas organizações</a
+            >
+          </li>
+          <li class="menu-item expandable">
+            <a href="#" 
+               class="menu-trigger"
+               aria-expanded="false"
+               aria-controls="submenu-descobrir">
+              <img
+                src="assets/icons/store.png"
+                alt="Ícone de descobrir"
+                class="nav-icon" />Descobrir
+              <img
+                src="assets/icons/chevron-down.png"
+                alt="Expandir menu"
+                class="chevron"
+            /></a>
+            <ul class="submenu" id="submenu-descobrir">
+              <li>
+                <a href="https://www.bussolasocial.com.br/" target="_blank"
+                  >Editais</a
+                >
+              </li>
+              <li>
+                <a href="https://academia.bussolasocial.com.br" target="_blank"
+                  >Academia Bússola</a
+                >
+              </li>
+              <li>
+                <a href="https://bussolacast.com.br" target="_blank"
+                  >BússolaCAST</a
+                >
+              </li>
+              <li>
+                <a href="https://www.bussolasocial.com.br/" target="_blank"
+                  >Corrente do bem</a
+                >
+              </li>
+              <li>
+                <a href="https://www.youtube.com/bussola_social" target="_blank"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="exit-button">
+            <a href="#">
+              <img
+                class="exit-icon"
+                src="assets/icons/exit.png"
+                alt="Ícone de sair"
+              />
+              <span>Sair</span>
+            </a>
+          </li>
+        </ul>
+
+        <footer class="sidebar-footer">
+          <img
+            src="assets/images/logo-bussola.svg"
+            alt="Logo Bússola"
+            class="bussola-logo"
+          />
+        </footer>
+      </nav>
+
+      <button class="sidebar-toggle" aria-label="Abrir menu lateral">
+        <img
+          src="assets/icons/menu.png"
+          alt="Ícone de menu"
+          class="menu-icon"
+        />
+      </button>
+
+      <main class="main-content">
+        <header class="main-header">
+          <h1>Sua conta Bússola</h1>
+          <p>
+            Gerencie as suas informações pessoais, configurações e segurança.
+          </p>
+        </header>
+
+        <section class="cards-grid">
+          <article class="card">
+            <h2>Sessão ativa</h2>
+            <div class="organization-info">
+              <img
+                src="assets/images/logo-gerando-falcoes.png"
+                alt="Logo da Associação Gerando Falcões"
+                class="org-logo"
+              />
+              <div class="org-details">
+                <h3>Associação Gerando Falcões</h3>
+                <p class="org-address">Vila Santa Helena, Poá - SP</p>
+                <a href="#" class="card-link">Ver minhas organizações</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <h2>Acesso padrão</h2>
+            <div class="organization-info">
+              <div class="org-icon-placeholder">
+                <img
+                  src="assets/icons/building.png"
+                  alt="Ícone de organização genérica"
+                />
+              </div>
+              <div class="org-details">
+                <h3>Última organização acessada</h3>
+                <a href="#" class="card-link">Alterar minhas preferências</a>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="notifications-card">
+          <header class="notifications-header">
+            <h2>Suas notificações</h2>
+          </header>
+          <ul class="notifications-list">
+            <li class="notification-item notification--warning">
+              <img
+                src="assets/icons/lock.png"
+                alt="Ícone de aviso de segurança"
+                class="notification-icon"
+              />
+              <div class="notification-content">
+                <p class="notification-title">Lembre de trocar sua senha!</p>
+                <p class="notification-description">
+                  Sua senha não é atualizada há mais de 6 meses, para manter sua
+                  segurança recomendamos que <a href="#">atualize agora</a>.
+                </p>
+              </div>
+              <time class="notification-time" datetime="2025-18-09T13:30"
+                >Hoje - 13:30</time
+              >
+            </li>
+            <li class="notification-item notification--success">
+              <img
+                src="assets/icons/check-circle.png"
+                alt="Ícone de sucesso"
+                class="notification-icon"
+              />
+              <div class="notification-content">
+                <p class="notification-title">
+                  Seu acesso foi aceito pela organização "Petrobras"
+                </p>
+                <p class="notification-description">
+                  Seu pedido de desbloqueio de acesso à PETROBRAS foi aceito,
+                  seu acesso já foi reestabelecido.
+                </p>
+              </div>
+              <time class="notification-time" datetime="2025-17-09T13:30"
+                >Ontem - 13:30</time
+              >
+            </li>
+            <li class="notification-item notification--error">
+              <img
+                src="assets/icons/blocked-access.png"
+                alt="Ícone de acesso bloqueado"
+                class="notification-icon"
+              />
+              <div class="notification-content">
+                <p class="notification-title">
+                  Seu acesso foi bloqueado pela organização "Petrobras"
+                </p>
+                <p class="notification-description">
+                  Seu acesso a PRIO foi bloqueado.
+                </p>
+              </div>
+              <time class="notification-time" datetime="2025-18-09T18:30"
+                >Hoje - 18:30</time
+              >
+            </li>
+            <li class="notification-item notification--info">
+              <img
+                src="assets/icons/mail.png"
+                alt="Ícone de convite por email"
+                class="notification-icon"
+              />
+              <div class="notification-content">
+                <p class="notification-title">
+                  Você foi convidado para ter acesso a organização Gerando
+                  Falcões
+                </p>
+                <p class="notification-description">
+                  Maria está convidando você a se juntar a Gerando Falcões -
+                  Instituto Mover vidas - Ceilandia - DF.
+                </p>
+              </div>
+              <time class="notification-time" datetime="2025-11-09"
+                >Há 1 semana</time
+              >
+            </li>
+            <li class="notification-item notification--success">
+              <img
+                src="assets/icons/check-circle.png"
+                alt="Ícone de sucesso"
+                class="notification-icon"
+              />
+              <div class="notification-content">
+                <p class="notification-title">
+                  Seu vínculo foi aceito pela organização "SICREDI"
+                </p>
+                <p class="notification-description">
+                  Sua solicitação de vínculo a SICREDI foi aprovada e seu acesso
+                  já está liberado.
+                </p>
+              </div>
+              <time class="notification-time" datetime="2025-18-09"
+                >Há 2 dias</time
+              >
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
